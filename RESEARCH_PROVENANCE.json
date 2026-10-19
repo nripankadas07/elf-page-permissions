@@ -1,0 +1,287 @@
+{
+  "comparables": [
+    {
+      "full": "lief-project/LIEF",
+      "url": "https://github.com/lief-project/LIEF",
+      "stars": 5598,
+      "pushed_at": "2026-10-18T17:31:50Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "branch": "main",
+      "observed": "2026-10-19T06:23:16.437Z",
+      "issues": [
+        {
+          "number": 1393,
+          "url": "https://github.com/lief-project/LIEF/pull/1393",
+          "title": "macho: do not warn on an empty LC_SYMTAB"
+        },
+        {
+          "number": 1392,
+          "url": "https://github.com/lief-project/LIEF/pull/1392",
+          "title": "MachO: handle empty LC_SYMTAB"
+        },
+        {
+          "number": 1391,
+          "url": "https://github.com/lief-project/LIEF/issues/1391",
+          "title": "LIEF-rs 1.0.0: underaligned prebuilt releases for target aarch64-linux-android"
+        },
+        {
+          "number": 1369,
+          "url": "https://github.com/lief-project/LIEF/pull/1369",
+          "title": "MachO: adjust __init_offsets when add_section shifts __TEXT"
+        },
+        {
+          "number": 1325,
+          "url": "https://github.com/lief-project/LIEF/issues/1325",
+          "title": "Mach-O LC_SYMTAB parsing emits \"Weird\" messages for empty tables"
+        }
+      ]
+    },
+    {
+      "full": "eliben/pyelftools",
+      "url": "https://github.com/eliben/pyelftools",
+      "stars": 2288,
+      "pushed_at": "2026-10-08T12:12:44Z",
+      "archived": false,
+      "license": "NOASSERTION",
+      "branch": "main",
+      "observed": "2026-10-19T06:23:16.371Z",
+      "issues": [
+        {
+          "number": 680,
+          "url": "https://github.com/eliben/pyelftools/pull/680",
+          "title": "Preserve GNU hash chain offsets across symbol lookups"
+        },
+        {
+          "number": 675,
+          "url": "https://github.com/eliben/pyelftools/pull/675",
+          "title": "add architecture-specific powerpc dynamic tags"
+        },
+        {
+          "number": 672,
+          "url": "https://github.com/eliben/pyelftools/pull/672",
+          "title": "Use CU address sizes when resolving DWARF lists"
+        },
+        {
+          "number": 665,
+          "url": "https://github.com/eliben/pyelftools/pull/665",
+          "title": "Fix iter_notes crash on GNU build-ID notes in core dumps"
+        },
+        {
+          "number": 656,
+          "url": "https://github.com/eliben/pyelftools/issues/656",
+          "title": "Crash in iter_notes() when parsing NT_GNU_BUILD_ID notes inside ET_CORE files (type-3 note collision)"
+        }
+      ]
+    },
+    {
+      "full": "m4b/goblin",
+      "url": "https://github.com/m4b/goblin",
+      "stars": 1556,
+      "pushed_at": "2026-08-30T17:40:25Z",
+      "archived": false,
+      "license": "MIT",
+      "branch": "master",
+      "observed": "2026-10-19T06:23:16.410Z",
+      "issues": [
+        {
+          "number": 548,
+          "url": "https://github.com/m4b/goblin/issues/548",
+          "title": "Add support for the arm64e.x1 architecture variant"
+        },
+        {
+          "number": 545,
+          "url": "https://github.com/m4b/goblin/pull/545",
+          "title": "Avoid panic on invalid Mach-O bind segment"
+        },
+        {
+          "number": 544,
+          "url": "https://github.com/m4b/goblin/pull/544",
+          "title": "fix file_version"
+        },
+        {
+          "number": 542,
+          "url": "https://github.com/m4b/goblin/issues/542",
+          "title": "DoS via unchecked `nsyms` in `symbols()`, and OOB panic in `imports()`"
+        },
+        {
+          "number": 541,
+          "url": "https://github.com/m4b/goblin/pull/541",
+          "title": "pe: skip raw writes for virtual-only sections"
+        }
+      ]
+    }
+  ],
+  "readmes": [
+    {
+      "repo": "lief-project/LIEF",
+      "path": "README.md",
+      "sha": "b4fb91f2314c614a579999b35cb26d56ffcbdf25"
+    },
+    {
+      "repo": "eliben/pyelftools",
+      "path": "README.md",
+      "sha": "ee3bbd952ea0b89e86172581ec78572c35e0f95b"
+    },
+    {
+      "repo": "m4b/goblin",
+      "path": "README.md",
+      "sha": "4205fa1107189daa62dc81b00fcbfd5f8561bcdd"
+    }
+  ],
+  "source_references": [
+    {
+      "repo": "eliben/pyelftools",
+      "path": "elftools/elf/segments.py",
+      "sha": "624f6758d8e1f2e3a36d763e9226fc9583b1d178",
+      "observed": "2026-10-19T06:24:10.209Z"
+    }
+  ],
+  "queries": [
+    {
+      "query": "FITS astronomy",
+      "url": "https://github.com/search?q=FITS%20astronomy&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-19T06:20:32.368Z",
+      "sort": "Most stars",
+      "results": [
+        "ATTron/astroz",
+        "sherpa/sherpa",
+        "esheldon/fitsio",
+        "TheCyberBrick/FITS-Rating-Tool",
+        "danieljprice/splash",
+        "Hrishikesh332/Astronomy_Analysis",
+        "nom-tam-fits/nom-tam-fits",
+        "onekiloparsec/QLFits",
+        "astroclubiitk/Computational-Astrophysics-2021",
+        "JuliaAstro/FITSIO.jl"
+      ]
+    },
+    {
+      "query": "ELF parser",
+      "url": "https://github.com/search?q=ELF%20parser&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-19T06:20:33.523Z",
+      "sort": "Most stars",
+      "results": [
+        "lief-project/LIEF",
+        "eliben/pyelftools",
+        "m4b/goblin",
+        "elfmaster/libelfmaster",
+        "zszszszsz/.config",
+        "aclements/libelfin",
+        "cole14/rust-elf",
+        "finixbit/elf-parser",
+        "aep/elfkit",
+        "fornwall/jelf"
+      ]
+    },
+    {
+      "query": "TIFF image",
+      "url": "https://github.com/search?q=TIFF%20image&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-19T06:20:34.587Z",
+      "sort": "Most stars",
+      "results": [
+        "lovell/sharp",
+        "libvips/libvips",
+        "SixLabors/ImageSharp",
+        "Lymphatus/caesium-image-compressor",
+        "sylikc/jpegview",
+        "drewnoakes/metadata-extractor",
+        "JimBobSquarePants/ImageProcessor",
+        "woelper/oculante",
+        "davidbyttow/govips",
+        "Tom94/tev"
+      ]
+    },
+    {
+      "query": "bin packing",
+      "url": "https://github.com/search?q=bin%20packing&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-19T06:20:35.685Z",
+      "sort": "Most stars",
+      "results": [
+        "cfig/Android_boot_image_editor",
+        "alexfrom0815/Online-3D-BPP-PCT",
+        "juj/RectangleBinPack",
+        "alexfrom0815/Online-3D-BPP-DRL",
+        "jakesgordon/bin-packing",
+        "dvdoug/BoxPacker",
+        "skjolber/3d-bin-container-packing",
+        "enzoruiz/3dbinpacking",
+        "jerry800416/3D-bin-packing",
+        "Flamethr0wer/polygon-packer"
+      ]
+    },
+    {
+      "query": "DRAT proof",
+      "url": "https://github.com/search?q=DRAT%20proof&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-19T06:20:36.716Z",
+      "sort": "Most stars",
+      "results": [
+        "marijnheule/drat-trim",
+        "digama0/frat",
+        "krobelus/rate",
+        "jesse-michael-han/neurocuber-public",
+        "marijnheule/pr2drat",
+        "jingchaochen/abcdSAT_Rat",
+        "benjaminkiesl/drat2er",
+        "cmu-transparency/verified_rup",
+        "prateekkumarweb/sat-verifier",
+        "jjasferreira/maxsat-core-bench"
+      ]
+    },
+    {
+      "query": "cutting stock",
+      "url": "https://github.com/search?q=cutting%20stock&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-19T06:22:22.814Z",
+      "sort": "Most stars",
+      "results": [
+        "danderfer/Comp_Sci_Sem_2",
+        "bozokopic/opcut",
+        "emadehsan/csp",
+        "kaiT2en/KaiT2en-Fedora",
+        "fabiofdsantos/2d-cutting-stock-problem",
+        "shivamim/Finance_AgenticAI",
+        "Jimmymugendi/Realtime-Data-Pipeline-for-Stock-Market-Analysis",
+        "AlexanderMorozovDesign/Linear_Cutting",
+        "MasumBhuiyan/2D-Irregular-Cutting-Stock-Algorithm",
+        "ccorcos/stock-cutting"
+      ]
+    },
+    {
+      "query": "Astropy",
+      "url": "https://github.com/search?q=Astropy&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-19T06:22:24.018Z",
+      "sort": "Most stars",
+      "results": [
+        "astropy/astropy",
+        "sunpy/sunpy",
+        "astropy/astroquery",
+        "asdf-format/asdf",
+        "astropy-learn/astropy-tutorials",
+        "astropy/photutils",
+        "gammapy/gammapy",
+        "astropy/specutils",
+        "astropy/astropy-workshop",
+        "astropy/ccd-reduction-and-photometry-guide"
+      ]
+    },
+    {
+      "query": "DRUP",
+      "url": "https://github.com/search?q=DRUP&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-19T06:22:25.128Z",
+      "sort": "Most stars",
+      "results": [
+        "drupal/drupal",
+        "drupal-composer/drupal-project",
+        "fossasia/phimpme-drupal",
+        "geerlingguy/drupal-vm",
+        "wodby/docker4drupal",
+        "hechoendrupal/drupal-console",
+        "perusio/drupal-with-nginx",
+        "chapter-three/next-drupal",
+        "immunIT/drupwn",
+        "dreadlocked/Drupalgeddon2"
+      ]
+    }
+  ],
+  "primary_reference": "https://ccoutant.github.io/gabi-stage/elf/07-pheader.html"
+}
