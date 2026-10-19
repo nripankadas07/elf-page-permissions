@@ -1,0 +1,28 @@
+{
+  "repo": "elf-page-permissions",
+  "units": 8,
+  "capability": "Explain ELF LOAD ranges, zero-fill and declared page-permission unions without executing a binary.",
+  "user": "Build and release engineers reviewing a small ELF handoff.",
+  "pain": "Individual segment flags do not explain shared-page permission unions or overlapping virtual mappings.",
+  "comparables": [
+    "lief-project/LIEF",
+    "eliben/pyelftools",
+    "m4b/goblin"
+  ],
+  "leader": "lief-project/LIEF",
+  "query": "ELF parser",
+  "contract": "ELF32/64, little/big endian, identification/version1, EXEC/DYN, standard header/program-entry sizes and1..128 program headers. LOAD validates file/memory sizes, class address limits, known R/W/X flags and p_align congruence. Report backed/zero-fill intervals, overlap ambiguity, entry outside executable LOAD, W+X segments/stack and W+X page flag unions. Page-offset incongruence is a finding. Page size is a declared power of two512..65536, default4096; interval sweep avoids enumeration of huge virtual ranges. PT_INTERP is read as bounded ASCII but never opened/executed.",
+  "limits": "8 MiB. Other program-header kinds are ignored, section headers/relocations/ABI-specific semantics unverified. No loader simulation, ASLR, dynamic linking, DWARF, exploitation assessment or safety certificate. Missing GNU_STACK is unknown information, not a healthy-stack claim. Page union is a declared model; actual OS loading/permissions can differ.",
+  "acceptance": "Both classes/endians, shared-page union, BSS, virtual overlap, entry failure, file/align rejection and huge virtual intervals without page allocation.",
+  "notes": "LIEF parses and modifies broad executable formats; pyelftools and Goblin already expose ELF segments/flags and much more. Our evidence report is a narrow read-only workflow, not proof of an absent feature or a safer parser.",
+  "overlap": "Filesystem POSIX ACL tooling and binary media tools do not model ELF virtual LOAD intervals. No owned ELF page-union inspector was found.",
+  "topics": [
+    "elf",
+    "binary-analysis",
+    "python",
+    "program-headers"
+  ],
+  "standard": "https://ccoutant.github.io/gabi-stage/elf/07-pheader.html",
+  "expected": "Exit1 intentionally: separate RX/RW LOAD byte ranges share a4096-byte page, whose declared flag union is RWX; zero-fill ranges remain explicit.",
+  "module": "elf_page_permissions"
+}
